@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="El Meridiano — Diario digital de actualidad, política, economía, cultura y deportes.">
+  <title>El Meridiano — Diario Digital</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================================================
+       ENCABEZADO
+       =================================================== -->
+  <header class="site-header">
+
+    <!-- Barra superior: fecha y accesos -->
+    <div class="header-top">
+      <time datetime="2025-06-10">Martes, 10 de junio de 2025</time>
+      <div class="header-top__links">
+        <a href="#">Suscribirse</a>
+        <a href="#">Iniciar sesión</a>
+        <a href="#">Edición impresa</a>
+      </div>
+    </div>
+
+    <!-- Nombre del diario -->
+    <div class="masthead">
+      <h1 class="masthead__name">El Meridiano</h1>
+      <p class="masthead__tagline">La verdad antes que la velocidad</p>
+      <span class="masthead__edition">Edición digital · Año XXIV · N.º 8741</span>
+    </div>
+
+    <!-- Navegación principal -->
+    <nav class="nav-wrapper" aria-label="Navegación principal">
+
+      <!-- Ícono hamburguesa — solo visible en mobile -->
+      <div class="nav-hamburger" role="button" aria-label="Abrir menú">
+        <span>Secciones</span>
+        <span class="hamburger-icon" aria-hidden="true">☰</span>
+      </div>
+
+      <!-- Barra de navegación — visible desde desktop -->
+      <ul class="main-nav" role="list">
+        <li><a href="#">Portada</a></li>
+        <li><a href="#">Política</a></li>
+        <li><a href="#">Economía</a></li>
+        <li><a href="#">Mundo</a></li>
+        <li><a href="#">Sociedad</a></li>
+        <li><a href="#">Cultura</a></li>
+        <li><a href="#">Tecnología</a></li>
+        <li><a href="#">Deportes</a></li>
+        <li><a href="#">Opinión</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- ===================================================
+       TICKER NOTICIAS DE ÚLTIMA HORA
+       =================================================== -->
+  <div class="breaking-bar" aria-label="Últimas noticias">
+    <span class="breaking-bar__label">Urgente</span>
+    <div class="breaking-bar__items">
+      <span>El senado debate el proyecto de reforma tributaria</span>
+      <span>Récord histórico en el índice bursátil local</span>
+      <span>Cumbre de cancilleres en Montevideo finaliza sin acuerdo</span>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       CONTENIDO PRINCIPAL
+       =================================================== -->
+  <main class="site-content" id="main-content">
+
+    <!-- === SECCIÓN HERO === -->
+    <section class="hero-section" aria-label="Noticias destacadas">
+
+      <!-- Noticia principal -->
+      <article class="news-featured">
+        <div class="news-featured__img-wrap">
+          <div class="img-placeholder" role="img" aria-label="Foto: Sesión legislativa extraordinaria">
+            Foto · Noticia principal
+          </div>
+        </div>
+        <div class="news-featured__body">
+          <span class="news-tag">Política</span>
+          <h2 class="news-featured__title">
+            <a href="#">El Congreso aprueba la reforma del sistema previsional con 135 votos a favor</a>
+          </h2>
+          <p class="news-featured__desc">
+            Luego de una maratónica sesión de más de doce horas, la cámara de diputados dio el visto bueno
+            a la iniciativa que modifica el régimen de jubilaciones y pensiones. La nueva ley establece un
+            esquema mixto que combina el aporte individual con la solidaridad intergeneracional y entrará
+            en vigencia a partir de enero próximo.
+          </p>
+          <div class="news-featured__meta">
+            <span class="author">María Eugenia Valverde</span>
+            <span>·</span>
+            <time datetime="2025-06-10T08:30">Hace 2 horas</time>
+            <span>·</span>
+            <span>8 min de lectura</span>
+          </div>
+          <a href="#" class="read-more">Leer nota completa</a>
+        </div>
+      </article>
+
+      <!-- Noticias secundarias del hero -->
+      <aside class="hero-sidebar news-stack" aria-label="Otras noticias destacadas">
+
+        <article class="news-card">
+          <div class="news-card__img img-placeholder" role="img" aria-label="Foto economía">Foto</div>
+          <div class="news-card__body">
+            <p class="news-card__tag">Economía</p>
+            <h3 class="news-card__title">
+              <a href="#">El Banco Central sube la tasa de interés por quinta vez en el año</a>
+            </h3>
+            <time class="news-card__time" datetime="2025-06-10T07:15">Hace 3 horas</time>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card__img img-placeholder" role="img" aria-label="Foto mundo">Foto</div>
+          <div class="news-card__body">
+            <p class="news-card__tag--blue news-card__tag">Mundo</p>
+            <h3 class="news-card__title">
+              <a href="#">La Unión Europea acuerda nuevas medidas de seguridad energética para el invierno</a>
+            </h3>
+            <time class="news-card__time" datetime="2025-06-10T06:00">Hace 5 horas</time>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card__img img-placeholder" role="img" aria-label="Foto sociedad">Foto</div>
+          <div class="news-card__body">
+            <p class="news-card__tag--dark news-card__tag">Sociedad</p>
+            <h3 class="news-card__title">
+              <a href="#">Informe revela aumento del 18% en el acceso a internet en zonas rurales</a>
+            </h3>
+            <time class="news-card__time" datetime="2025-06-10T05:30">Hace 6 horas</time>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card__img img-placeholder" role="img" aria-label="Foto cultura">Foto</div>
+          <div class="news-card__body">
+            <p class="news-card__tag">Cultura</p>
+            <h3 class="news-card__title">
+              <a href="#">El festival de cine independiente convocó a más de 40.000 espectadores en su primera semana</a>
+            </h3>
+            <time class="news-card__time" datetime="2025-06-09T22:00">Ayer</time>
+          </div>
+        </article>
+
+      </aside>
+
+    </section>
+
+    <!-- === PUBLICIDAD BANNER === -->
+    <aside class="ad-banner" aria-label="Publicidad">
+      <span class="ad-banner__label">Publicidad</span>
+      <p class="ad-banner__content">Banco Austral — Tu futuro empieza hoy</p>
+      <p class="ad-banner__sub">Simulá tu crédito en minutos · bancoaustral.com.ar</p>
+    </aside>
+
+    <!-- === SECCIÓN MEDIA: GRILLA + SIDEBAR === -->
+    <section class="mid-section" aria-label="Más noticias">
+
+      <!-- Grilla de noticias -->
+      <div class="news-grid">
+
+        <div class="news-grid__title-bar">
+          <h2 class="section-title">Más noticias</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </div>
+
+        <div class="news-tiles">
+
+          <article class="news-tile">
+            <div class="news-tile__img img-placeholder" role="img" aria-label="Foto tecnología">
+              Foto · Tecnología
+            </div>
+            <p class="news-tile__tag">Tecnología</p>
+            <h3 class="news-tile__title">
+              <a href="#">La inteligencia artificial ya redacta el 30% de los informes legales en estudios jurídicos de la región</a>
+            </h3>
+            <p class="news-tile__desc">
+              Un relevamiento entre 200 estudios de abogados reveló que la adopción de herramientas de IA
+              se aceleró de manera significativa durante el último año.
+            </p>
+          </article>
+
+          <article class="news-tile">
+            <div class="news-tile__img img-placeholder" role="img" aria-label="Foto medio ambiente">
+              Foto · Ambiente
+            </div>
+            <p class="news-tile__tag--blue news-tile__tag">Ambiente</p>
+            <h3 class="news-tile__title">
+              <a href="#">Científicos documentan la recuperación del bosque nativo en la región del Chaco tras medidas de protección</a>
+            </h3>
+            <p class="news-tile__desc">
+              El área reforestada creció un 12% interanual según datos del Instituto Nacional de Estadísticas
+              Forestales publicados esta semana.
+            </p>
+          </article>
+
+          <article class="news-tile">
+            <div class="news-tile__img img-placeholder" role="img" aria-label="Foto economía">
+              Foto · Economía
+            </div>
+            <p class="news-tile__tag">Economía</p>
+            <h3 class="news-tile__title">
+              <a href="#">Exportaciones del sector agroindustrial crecen 22% en el primer semestre del año</a>
+            </h3>
+            <p class="news-tile__desc">
+              Los productos con mayor incremento fueron la soja procesada y los derivados cítricos,
+              impulsados por la demanda asiática.
+            </p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Columnas y más leído">
+
+        <!-- Bloque publicidad lateral -->
+        <div class="ad-lateral" aria-label="Publicidad">
+          <span class="ad-lateral__label">Publicidad</span>
+          <p class="ad-lateral__cta">Asegurá tu hogar con Seguro Total</p>
+          <a href="#" class="ad-lateral__btn">Ver planes</a>
+        </div>
+
+        <!-- Columnas de opinión -->
+        <div class="sidebar-block sidebar-block--accent">
+          <h3 class="sidebar-block__title">Opinión</h3>
+
+          <div class="opinion-item">
+            <div class="opinion-avatar" aria-hidden="true">RC</div>
+            <div class="opinion-body">
+              <p class="opinion-body__author">Ricardo Caballero</p>
+              <p class="opinion-body__title">
+                <a href="#">La trampa fiscal de las promesas electorales</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="opinion-item">
+            <div class="opinion-avatar" aria-hidden="true">LF</div>
+            <div class="opinion-body">
+              <p class="opinion-body__author">Laura Ferreira</p>
+              <p class="opinion-body__title">
+                <a href="#">Educación digital: más allá de las pantallas</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="opinion-item">
+            <div class="opinion-avatar" aria-hidden="true">MB</div>
+            <div class="opinion-body">
+              <p class="opinion-body__author">Martín Breccia</p>
+              <p class="opinion-body__title">
+                <a href="#">El nuevo mapa geopolítico y América Latina</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Lo más leído -->
+        <div class="sidebar-block">
+          <h3 class="sidebar-block__title">Lo más leído</h3>
+          <ol class="news-list" aria-label="Noticias más leídas">
+            <li class="news-list__item">
+              <span class="news-list__num" aria-hidden="true">1</span>
+              <a href="#">Por qué el dólar volvió a superar la barrera de los 1.000 pesos</a>
+            </li>
+            <li class="news-list__item">
+              <span class="news-list__num" aria-hidden="true">2</span>
+              <a href="#">La selección clasificó al Mundial con una goleada histórica</a>
+            </li>
+            <li class="news-list__item">
+              <span class="news-list__num" aria-hidden="true">3</span>
+              <a href="#">Nuevo fallo de la Corte cambia la jurisprudencia sobre hábeas corpus</a>
+            </li>
+            <li class="news-list__item">
+              <span class="news-list__num" aria-hidden="true">4</span>
+              <a href="#">Los diez mejores restaurantes para cenar en la ciudad según los lectores</a>
+            </li>
+            <li class="news-list__item">
+              <span class="news-list__num" aria-hidden="true">5</span>
+              <a href="#">El gobierno anunció el nuevo esquema de tarifas de transporte</a>
+            </li>
+          </ol>
+        </div>
+
+      </aside>
+
+    </section>
+
+    <!-- === SECCIÓN INFERIOR: DEPORTES + TECNOLOGÍA === -->
+    <section class="bottom-section" aria-label="Deportes y Tecnología">
+
+      <!-- Deportes -->
+      <div class="bottom-col">
+        <div class="news-grid__title-bar">
+          <h2 class="section-title">Deportes</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </div>
+
+        <article class="news-snippet">
+          <div class="news-snippet__img img-placeholder" role="img" aria-label="Foto fútbol">Foto</div>
+          <div>
+            <h3 class="news-snippet__title">
+              <a href="#">Liga profesional: el clásico terminó 2-1 con un gol en el descuento</a>
+            </h3>
+          </div>
+        </article>
+
+        <article class="news-snippet">
+          <div class="news-snippet__img img-placeholder" role="img" aria-label="Foto tenis">Foto</div>
+          <div>
+            <h3 class="news-snippet__title">
+              <a href="#">La tenista argentina avanzó a los cuartos de final en Roland Garros</a>
+            </h3>
+          </div>
+        </article>
+
+        <article class="news-snippet">
+          <div class="news-snippet__img img-placeholder" role="img" aria-label="Foto básquet">Foto</div>
+          <div>
+            <h3 class="news-snippet__title">
+              <a href="#">La Liga Nacional de Básquet define sus finalistas este fin de semana</a>
+            </h3>
+          </div>
+        </article>
+      </div>
+
+      <!-- Ciencia y Tecnología -->
+      <div class="bottom-col">
+        <div class="news-grid__title-bar" style="border-top-color: var(--color-accent-2);">
+          <h2 class="section-title">Ciencia</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </div>
+
+        <article class="news-snippet">
+          <div class="news-snippet__img img-placeholder" role="img" aria-label="Foto ciencia">Foto</div>
+          <div>
+            <h3 class="news-snippet__title">
+              <a href="#">Investigadores locales desarrollan un biosensor de bajo costo para detectar bacterias en agua</a>
+            </h3>
+          </div>
+        </article>
+
+        <article class="news-snippet">
+          <div class="news-snippet__img img-placeholder" role="img" aria-label="Foto espacio">Foto</div>
+          <div>
+            <h3 class="news-snippet__title">
+              <a href="#">La misión espacial de la agencia nacional regresa tras seis meses en la ISS</a>
+            </h3>
+          </div>
+        </article>
+
+        <article class="news-snippet">
+          <div class="news-snippet__img img-placeholder" role="img" aria-label="Foto salud">Foto</div>
+          <div>
+            <h3 class="news-snippet__title">
+              <a href="#">Un ensayo clínico muestra resultados prometedores contra el dengue hemorrágico</a>
+            </h3>
+          </div>
+        </article>
+      </div>
+
+      <!-- Cultura -->
+      <div class="bottom-col">
+        <div class="news-grid__title-bar" style="border-top-color: var(--color-ink-mid);">
+          <h2 class="section-title">Cultura</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </div>
+
+        <article class="news-snippet">
+          <div class="news-snippet__img img-placeholder" role="img" aria-label="Foto cultura">Foto</div>
+          <div>
+            <h3 class="news-snippet__title">
+              <a href="#">La novela ganadora del Premio Claridad supera los 80.000 ejemplares vendidos</a>
+            </h3>
+          </div>
+        </article>
+
+        <article class="news-snippet">
+          <div class="news-snippet__img img-placeholder" role="img" aria-label="Foto cine">Foto</div>
+          <div>
+            <h3 class="news-snippet__title">
+              <a href="#">El cineasta rosarino estrenará su nuevo film en la Mostra de Venecia</a>
+            </h3>
+          </div>
+        </article>
+
+        <article class="news-snippet">
+          <div class="news-snippet__img img-placeholder" role="img" aria-label="Foto música">Foto</div>
+          <div>
+            <h3 class="news-snippet__title">
+              <a href="#">El festival de jazz anuncia su grilla completa con artistas de doce países</a>
+            </h3>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- === PUBLICIDAD INFERIOR === -->
+    <aside class="ad-banner" aria-label="Publicidad" style="margin-top: 24px;">
+      <span class="ad-banner__label">Publicidad</span>
+      <p class="ad-banner__content">Tecnohogar — La mejor tecnología al mejor precio</p>
+      <p class="ad-banner__sub">Cuotas sin interés · tecnohogar.com.ar</p>
+    </aside>
+
+  </main>
+
+  <!-- ===================================================
+       PIE DE PÁGINA
+       =================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <p class="footer-brand__name">El Meridiano</p>
+        <p class="footer-brand__desc">Periodismo independiente desde 2001. La verdad antes que la velocidad.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4 class="footer-col__title">Secciones</h4>
+          <ul>
+            <li><a href="#">Política</a></li>
+            <li><a href="#">Economía</a></li>
+            <li><a href="#">Mundo</a></li>
+            <li><a href="#">Sociedad</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col__title">Más secciones</h4>
+          <ul>
+            <li><a href="#">Cultura</a></li>
+            <li><a href="#">Tecnología</a></li>
+            <li><a href="#">Deportes</a></li>
+            <li><a href="#">Opinión</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col__title">El diario</h4>
+          <ul>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Equipo editorial</a></li>
+            <li><a href="#">Publicidad</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col__title">Suscriptores</h4>
+          <ul>
+            <li><a href="#">Suscribirse</a></li>
+            <li><a href="#">Edición impresa</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Archivo</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 El Meridiano. Todos los derechos reservados. · <a href="#">Términos de uso</a> · <a href="#">Política de privacidad</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
